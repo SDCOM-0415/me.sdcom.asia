@@ -4,7 +4,7 @@ FROM cnbcool/default-dev-env:latest
 # 腾讯云软件源使用示例: https://cnb.cool/examples/mirrors/mirrors.cloud.tencent.com
 
 # 以及按需安装其他软件
-RUN apt-get update && apt-get install -y git sudo vim curl 
+RUN apt-get update && apt-get install -y git sudo vim curl git-lfs
 
 # 安装 code-server 和 vscode 常用插件
 RUN curl -fsSL https://code-server.dev/install.sh | sh \
@@ -21,6 +21,8 @@ RUN curl -fsSL https://code-server.dev/install.sh | sh \
   && code-server --install-extension donjayamanne.githistory \
   && code-server --install-extension yandeu.five-server \
   && code-server --install-extension ms-ceintl.vscode-language-pack-zh-hans \
+  && wget https://cnb.cool/SDCOM/moren/html/-/git/raw/main/.ide/argv.json -O /root/.local/share/code-server/User/argv.json \
+  && wget https://cnb.cool/SDCOM/moren/html/-/git/raw/main/.ide/languagepacks.json -O /root/.local/share/code-server/languagepacks.json \
   && echo done
 
 # 安装 ssh 服务，用于支持 VSCode 客户端通过 Remote-SSH 访问开发环境
