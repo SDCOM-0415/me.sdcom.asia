@@ -229,34 +229,28 @@ h1 {
 
 .skill-icons {
     display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
     justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
 }
 
-.skill-icon {
-    font-size: 2rem;
-    padding: 0.75rem;
-    background-color: var(--card-bg);
+.skill-icons-image {
+    max-width: 100%;
+    height: auto;
     border-radius: 0.5rem;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
-.skill-icon:hover {
-    background-color: var(--card-hover-bg);
+.skill-icons-image:hover {
     transform: translateY(-2px);
 }
 
-/* 技能图标的品牌颜色 */
-.skill-icon .fa-html5 { color: #E34F26; }
-.skill-icon .fa-css3-alt { color: #1572B6; }
-.skill-icon .fa-js { color: #F7DF1E; }
-.skill-icon .fa-node-js { color: #339933; }
-.skill-icon .fa-python { color: #3776AB; }
-.skill-icon .fa-git-alt { color: #F05032; }
-.skill-icon .fa-docker { color: #2496ED; }
-.skill-icon .fa-linux { color: #FCC624; }
-.skill-icon .fa-aws { color: #FF9900; }
+@media (max-width: 768px) {
+    .skill-icons-image {
+        max-width: 100%;
+        height: auto;
+    }
+}
 
 /* 页脚 */
 footer {
