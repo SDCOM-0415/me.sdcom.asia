@@ -1,10 +1,17 @@
-/* 使用深色主题作为默认主题 */
+/**
+ * 个人介绍网站样式表
+ * 使用深色主题作为默认主题
+ */
+
+/* 全局变量定义 */
 :root {
-    --bg-color: #121212;
-    --text-color: #e0e0e0;
-    --accent-color: #7b50c7;
-    --card-bg: rgba(255, 255, 255, 0.1);
-    --card-hover-bg: rgba(255, 255, 255, 0.15);
+    --bg-color: #121212;          /* 背景颜色 */
+    --text-color: #e0e0e0;        /* 文本颜色 */
+    --accent-color: #7b50c7;      /* 强调色 */
+    --card-bg: rgba(255, 255, 255, 0.1);        /* 卡片背景色 */
+    --card-hover-bg: rgba(255, 255, 255, 0.15); /* 卡片悬停背景色 */
+    
+    /* 社交媒体颜色 */
     --github-color: #333;
     --blog-color: linear-gradient(to right, #fd5949, #d6249f);
     --cnb-color: #4299e1;
@@ -12,15 +19,19 @@
     --twitter-color: #00ACEE;
     --bilibili-color: #fb7299;
     --email-color: #00b0ff;
+    
+    /* 字体设置 */
     --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/* 基础样式重置 */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* 基础页面样式 */
 body {
     font-family: var(--font-sans);
     background-color: var(--bg-color);
@@ -29,28 +40,32 @@ body {
     padding: 0 1rem;
 }
 
+/* 主内容区域 */
 main {
     max-width: 800px;
     margin: 0 auto;
     padding: 2rem 0;
 }
 
+/* 链接基础样式 */
 a {
     color: inherit;
     text-decoration: none;
 }
 
-/* 介绍部分 */
+/* 介绍部分样式 */
 .intro {
     text-align: center;
     margin-bottom: 2rem;
 }
 
+/* 主标题样式 */
 h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
+/* 渐变文本效果 */
 .text-gradient {
     background: linear-gradient(90deg, #7b50c7, #4299e1);
     -webkit-background-clip: text;
@@ -59,16 +74,19 @@ h1 {
     font-weight: bold;
 }
 
+/* 副标题样式 */
 .subtitle {
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
     opacity: 0.8;
 }
 
+/* 副标题中的强调文本 */
 .subtitle strong {
     font-weight: 600;
 }
 
+/* 副标题中的代码样式 */
 .subtitle code {
     background-color: rgba(255, 255, 255, 0.1);
     padding: 0.2rem 0.4rem;
@@ -76,7 +94,7 @@ h1 {
     font-family: monospace;
 }
 
-/* 社交链接 */
+/* 社交链接区域 */
 .social-links {
     display: flex;
     flex-wrap: wrap;
@@ -85,6 +103,7 @@ h1 {
     margin: 1.5rem 0;
 }
 
+/* 单个社交链接样式 */
 .social-link {
     display: inline-flex;
     align-items: center;
@@ -94,20 +113,24 @@ h1 {
     transition: all 0.3s ease;
 }
 
+/* 社交链接悬停效果 */
 .social-link:hover {
     transform: translateY(-2px);
 }
 
+/* 社交链接图标 */
 .social-link i {
     font-size: 1.2rem;
 }
 
+/* 社交链接文本 */
 .social-link span {
     margin-left: 0.25rem;
     font-size: 0.9rem;
     font-weight: 500;
 }
 
+/* 各社交平台特定悬停效果 */
 .social-link.github:hover {
     background-color: var(--github-color);
     color: white;
@@ -143,12 +166,13 @@ h1 {
     color: white;
 }
 
-/* GitHub 活动 */
+/* GitHub 活动展示区域 */
 .github-activity {
     text-align: center;
     margin: 2rem 0;
 }
 
+/* GitHub 头像样式 */
 .github-avatar {
     width: 100px;
     height: 100px;
@@ -156,13 +180,14 @@ h1 {
     border: 3px solid var(--accent-color);
 }
 
+/* GitHub 贡献图样式 */
 .github-contrib {
     width: 100%;
     margin-top: 1rem;
     border-radius: 0.5rem;
 }
 
-/* 项目部分 */
+/* 区块标题样式 */
 .section-title {
     font-size: 1.5rem;
     margin-bottom: 1rem;
@@ -170,16 +195,19 @@ h1 {
     align-items: center;
 }
 
+/* 区块标题链接样式 */
 .section-title a {
     margin-left: 0.5rem;
     opacity: 0.5;
     transition: opacity 0.3s ease;
 }
 
+/* 区块标题链接悬停效果 */
 .section-title a:hover {
     opacity: 1;
 }
 
+/* 项目网格布局 */
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -187,6 +215,7 @@ h1 {
     margin-bottom: 2rem;
 }
 
+/* 项目卡片样式 */
 .project-card {
     background-color: var(--card-bg);
     border-radius: 0.5rem;
@@ -194,40 +223,47 @@ h1 {
     transition: background-color 0.3s ease;
 }
 
+/* 项目卡片悬停效果 */
 .project-card:hover {
     background-color: var(--card-hover-bg);
 }
 
+/* 项目内容布局 */
 .project-content {
     display: flex;
     align-items: center;
 }
 
+/* 项目信息区域 */
 .project-info {
     flex: 1;
 }
 
+/* 项目标题样式 */
 .project-title {
     font-weight: 500;
     margin-bottom: 0.25rem;
 }
 
+/* 项目描述样式 */
 .project-description {
     font-size: 0.9rem;
     opacity: 0.7;
 }
 
+/* 项目图标样式 */
 .project-icon {
     margin-left: 1rem;
     font-size: 2rem;
     opacity: 0.8;
 }
 
-/* 技能部分 */
+/* 技能部分样式 */
 .skills {
     margin-bottom: 2rem;
 }
 
+/* 技能图标网格布局 */
 .skill-icons {
     display: grid;
     grid-template-columns: repeat(14, 1fr);
@@ -237,37 +273,25 @@ h1 {
     padding: 0 1rem;
 }
 
+/* 单个技能图标样式 */
 .skill-icon {
     transition: transform 0.3s ease;
     cursor: pointer;
 }
 
+/* 技能图标悬停效果 */
 .skill-icon:hover {
     transform: translateY(-5px);
 }
 
+/* 技能图标图片样式 */
 .skill-icon img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-@media (max-width: 980px) {
-    .skill-icons {
-        grid-template-columns: repeat(7, 1fr);
-        max-width: 490px;
-    }
-}
-
-@media (max-width: 500px) {
-    .skill-icons {
-        grid-template-columns: repeat(4, 1fr);
-        max-width: 280px;
-        gap: 4px;
-    }
-}
-
-/* 页脚 */
+/* 页脚样式 */
 footer {
     text-align: center;
     margin-top: 3rem;
@@ -275,7 +299,15 @@ footer {
     font-size: 0.9rem;
 }
 
-/* 响应式设计 */
+/* 响应式设计 - 中等屏幕 */
+@media (max-width: 980px) {
+    .skill-icons {
+        grid-template-columns: repeat(7, 1fr);
+        max-width: 490px;
+    }
+}
+
+/* 响应式设计 - 平板设备 */
 @media (max-width: 768px) {
     h1 {
         font-size: 2rem;
@@ -286,6 +318,16 @@ footer {
     }
 }
 
+/* 响应式设计 - 小屏幕设备 */
+@media (max-width: 500px) {
+    .skill-icons {
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 280px;
+        gap: 4px;
+    }
+}
+
+/* 响应式设计 - 移动设备 */
 @media (max-width: 480px) {
     h1 {
         font-size: 1.75rem;
@@ -303,5 +345,3 @@ footer {
         font-size: 1rem;
     }
 }
-
-/* 使用深色主题作为唯一主题 */

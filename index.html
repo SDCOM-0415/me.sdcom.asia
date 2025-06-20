@@ -1,22 +1,29 @@
+<!-- 个人介绍网站 - 展示个人信息、项目和技能的响应式网页 -->
 <!DOCTYPE html>
 <html lang="zh-CN">
+<!-- 头部区域：包含元数据、标题和样式链接 -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人介绍网站</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" type="image/jpeg" href="images/favicon.jpeg">
+    <meta charset="UTF-8"> <!-- 设置字符编码 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式设计视口设置 -->
+    <title>个人介绍网站</title> <!-- 网页标题 -->
+    <link rel="stylesheet" href="styles.css"> <!-- 引入自定义样式表 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <!-- 引入Font Awesome图标 -->
+    <link rel="icon" type="image/jpeg" href="images/favicon.jpeg"> <!-- 设置网站图标 -->
 </head>
+
+<!-- 页面主体 -->
 <body>
+    <!-- 主要内容区域 -->
     <main>
+        <!-- 个人介绍部分 -->
         <section class="intro">
             <h1>你好，我是 <span class="text-gradient">SDCOM</span></h1>
             <p class="subtitle">
                 👨‍💻 只会<strong>CV</strong>的开发者 / <code>刚刚中考完的初中生</code><br>
-                <span id="hitokoto">正在加载一言...</span>
+                <span id="hitokoto">正在加载一言...</span> <!-- 一言加载区域 -->
             </p>
             
+            <!-- 社交媒体链接 -->
             <div class="social-links">
                 <a href="https://github.com/yourusername" target="_blank" class="social-link github">
                     <i class="fab fa-github"></i>
@@ -42,12 +49,14 @@
             </div>
         </section>
 
+        <!-- GitHub活动展示区域 -->
         <section class="github-activity">
             <img src="https://www.sdcom.top/Picture/tubiao.jpeg" alt="GitHub 头像" class="github-avatar">
             <!-- 如果你想添加 GitHub 贡献图，可以使用类似的服务 -->
             <!-- <img src="https://github-contribution-graph.vercel.app/api/yourusername" alt="GitHub 贡献图" class="github-contrib"> -->
         </section>
 
+        <!-- 项目展示区域 -->
         <section class="projects">
             <h3 class="section-title">
                 <span>💻 项目</span>
@@ -56,7 +65,9 @@
                 </a>
             </h3>
             
+            <!-- 项目卡片网格 -->
             <div class="project-grid">
+                <!-- 项目一 -->
                 <a href="https://github.com/yourusername/project1" target="_blank" class="project-card">
                     <div class="project-content">
                         <div class="project-info">
@@ -71,6 +82,7 @@
                     </div>
                 </a>
                 
+                <!-- 项目二 -->
                 <a href="https://github.com/yourusername/project2" target="_blank" class="project-card">
                     <div class="project-content">
                         <div class="project-info">
@@ -85,12 +97,13 @@
                     </div>
                 </a>
                 
+                <!-- 项目三 -->
                 <a href="https://github.com/yourusername/project3" target="_blank" class="project-card">
                     <div class="project-content">
                         <div class="project-info">
                             <div class="project-title">项目三</div>
-                            <div class="project-description">
-                                一个实用的库，简化了常见的开发任务。
+                            <div class="project-description"></div>
+                <a href="https://github.com/yourusername/project4" target="_blank" class="project-card">
                             </div>
                         </div>
                         <div class="project-icon">
@@ -99,6 +112,7 @@
                     </div>
                 </a>
                 
+                <!-- 项目四 -->
                 <a href="https://github.com/yourusername/project4" target="_blank" class="project-card">
                     <div class="project-content">
                         <div class="project-info">
@@ -115,8 +129,10 @@
             </div>
         </section>
 
+        <!-- 技能展示区域 -->
         <section class="skills">
             <h3 class="section-title">⚡ 技能</h3>
+            <!-- 技能图标网格 -->
             <div class="skill-icons">
                 <a href="https://www.gnu.org/software/bash/" target="_blank" class="skill-icon" title="Bash"><img src="//skillicons.hydun.com/icons?i=bash" alt="Bash"></a>
                 <a href="https://discord.com/" target="_blank" class="skill-icon" title="Discord"><img src="//skillicons.hydun.com/icons?i=discord" alt="Discord"></a>
@@ -133,34 +149,28 @@
                 <a href="https://nginx.org/" target="_blank" class="skill-icon" title="Nginx"><img src="//skillicons.hydun.com/icons?i=nginx" alt="Nginx"></a>
                 <a href="https://nodejs.org/" target="_blank" class="skill-icon" title="Node.js"><img src="//skillicons.hydun.com/icons?i=nodejs" alt="Node.js"></a>
                 <a href="https://www.adobe.com/products/photoshop.html" target="_blank" class="skill-icon" title="Photoshop"><img src="//skillicons.hydun.com/icons?i=ps" alt="Photoshop"></a>
-=======
                 <a href="https://www.python.org/" target="_blank" class="skill-icon" title="Python"><img src="//skillicons.hydun.com/icons?i=py" alt="Python"></a>
-=======
                 <a href="https://redis.io/" target="_blank" class="skill-icon" title="Redis"><img src="//skillicons.hydun.com/icons?i=redis" alt="Redis"></a>
-=======
-=======
                 <a href="https://www.sqlite.org/" target="_blank" class="skill-icon" title="SQLite"><img src="//skillicons.hydun.com/icons?i=sqlite" alt="SQLite"></a>
                 <a href="https://stackoverflow.com/" target="_blank" class="skill-icon" title="Stack Overflow"><img src="//skillicons.hydun.com/icons?i=stackoverflow" alt="Stack Overflow"></a>
-=======
                 <a href="https://developer.mozilla.org/en-US/docs/Web/SVG" target="_blank" class="skill-icon" title="SVG"><img src="//skillicons.hydun.com/icons?i=svg" alt="SVG"></a>
-=======
-=======
-=======
                 <a href="https://twitter.com/" target="_blank" class="skill-icon" title="Twitter"><img src="//skillicons.hydun.com/icons?i=twitter" alt="Twitter"></a>
                 <a href="https://www.typescriptlang.org/" target="_blank" class="skill-icon" title="TypeScript"><img src="//skillicons.hydun.com/icons?i=ts" alt="TypeScript"></a>
                 <a href="https://vercel.com/" target="_blank" class="skill-icon" title="Vercel"><img src="//skillicons.hydun.com/icons?i=vercel" alt="Vercel"></a>
-                <a href="https://vitejs.dev/" target="_blank" class="skill-icon" title="Vite"><img src="//skillicons.hydun.com/icons?i=vite" alt="Vite"></a>
+                <a href="https://vitejs.dev/" target="_blank" class="skill-icon" title="Vite"></a><img src="//skillicons.hydun.com/icons?i=vite" alt="Vite"></a>
                 <a href="https://code.visualstudio.com/" target="_blank" class="skill-icon" title="VS Code"><img src="//skillicons.hydun.com/icons?i=vscode" alt="VS Code"></a>
                 <a href="https://vuejs.org/" target="_blank" class="skill-icon" title="Vue"><img src="//skillicons.hydun.com/icons?i=vue" alt="Vue"></a>
                 <a href="https://workers.cloudflare.com/" target="_blank" class="skill-icon" title="Cloudflare Workers"><img src="//skillicons.hydun.com/icons?i=workers" alt="Cloudflare Workers"></a>
             </div>
         </section>
 
+        <!-- 页脚区域 -->
         <footer>
             <p>© <span id="current-year"></span> SDCOM. 保留所有权利。</p>
         </footer>
     </main>
 
+    <!-- 引入JavaScript脚本 -->
     <script src="script.js"></script>
 </body>
 </html>
