@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式设计视口设置 -->
     <title>个人介绍网站</title> <!-- 网页标题 -->
     <link rel="stylesheet" href="styles.css"> <!-- 引入自定义样式表 -->
+    <link rel="stylesheet" href="progress-styles.css"> <!-- 引入进度条专用样式 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <!-- 引入Font Awesome图标 -->
     <link rel="icon" type="image/jpeg" href="images/favicon.jpeg"> <!-- 设置网站图标 -->
 </head>
@@ -128,15 +129,27 @@
                             </div>
                             <div class="mb-12 max-xl:mb-4">
                                 <div class="flex items-center text-l text-black-900 "><span>语言</span></div>
-                                <div class="flex rounded-[4px] overflow-x-hidden mt-4 gap-x-[2px]">
-                                    <div class="h-2 shrink min-w-[2px]" style="width: 53.85%; background-color: #0066cc;"></div>
-                                    <div class="h-2 shrink min-w-[2px]" style="width: 30.77%; background-color: #4d9900;"></div>
-                                    <div class="h-2 shrink min-w-[2px]" style="width: 15.38%; background-color: #e34c26;"></div>
+                                <div class="language-progress">
+                                    <div style="width: 53.85%; background-color: #0066cc;"></div>
+                                    <div style="width: 30.77%; background-color: #4d9900;"></div>
+                                    <div style="width: 15.38%; background-color: #e34c26;"></div>
                                 </div>
-                                <div class="rounded-[4px] overflow-x-hidden mt-2 flex flex-wrap gap-x-5 gap-y-0.5 font-medium text-sm">
-                                    <div class="items-center inline-flex text-black-600"><div class="w-[10px] h-[10px] rounded-[50%]" style="background-color: #0066cc;"></div><span class="ml-2 text-black-900">Markdown</span><span class="ml-1 font-normal">53.85%</span></div>
-                                    <div class="items-center inline-flex text-black-600"><div class="w-[10px] h-[10px] rounded-[50%]" style="background-color: #4d9900;"></div><span class="ml-2 text-black-900">Shell</span><span class="ml-1 font-normal">30.77%</span></div>
-                                    <div class="items-center inline-flex text-black-600"><div class="w-[10px] h-[10px] rounded-[50%]" style="background-color: #e34c26;"></div><span class="ml-2 text-black-900">HTML</span><span class="ml-1 font-normal">15.38%</span></div>
+                                <div class="language-tags">
+                                    <div class="language-tag">
+                                        <div class="language-color" style="background-color: #0066cc;"></div>
+                                        <span>Markdown</span>
+                                        <span class="language-percent">53.85%</span>
+                                    </div>
+                                    <div class="language-tag">
+                                        <div class="language-color" style="background-color: #4d9900;"></div>
+                                        <span>Shell</span>
+                                        <span class="language-percent">30.77%</span>
+                                    </div>
+                                    <div class="language-tag">
+                                        <div class="language-color" style="background-color: #e34c26;"></div>
+                                        <span>HTML</span>
+                                        <span class="language-percent">15.38%</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -156,19 +169,39 @@
                             </div>
                             <div class="mb-12 max-xl:mb-4">
                                 <div class="flex items-center text-l text-black-900 "><span>语言</span></div>
-                                <div class="flex rounded-[4px] overflow-x-hidden mt-4 gap-x-[2px]">
-                                    <div class="h-2 shrink min-w-[2px]" style="width: 38.46%; background-color: #42b883;"></div>
-                                    <div class="h-2 shrink min-w-[2px]" style="width: 30.77%; background-color: #f7df1e;"></div>
-                                    <div class="h-2 shrink min-w-[2px]" style="width: 15.38%; background-color: #e34c26;"></div>
-                                    <div class="h-2 shrink min-w-[2px]" style="width: 7.69%; background-color: #0066cc;"></div>
-                                    <div class="h-2 shrink min-w-[2px]" style="width: 7.69%; background-color: #2965f1;"></div>
+                                <div class="language-progress">
+                                    <div style="width: 38.46%; background-color: #42b883;"></div>
+                                    <div style="width: 30.77%; background-color: #f7df1e;"></div>
+                                    <div style="width: 15.38%; background-color: #e34c26;"></div>
+                                    <div style="width: 7.69%; background-color: #0066cc;"></div>
+                                    <div style="width: 7.69%; background-color: #2965f1;"></div>
                                 </div>
-                                <div class="rounded-[4px] overflow-x-hidden mt-2 flex flex-wrap gap-x-5 gap-y-0.5 font-medium text-sm">
-                                    <div class="items-center inline-flex text-black-600"><div class="w-[10px] h-[10px] rounded-[50%]" style="background-color: #42b883;"></div><span class="ml-2 text-black-900">Vue</span><span class="ml-1 font-normal">38.46%</span></div>
-                                    <div class="items-center inline-flex text-black-600"><div class="w-[10px] h-[10px] rounded-[50%]" style="background-color: #f7df1e;"></div><span class="ml-2 text-black-900">JavaScript</span><span class="ml-1 font-normal">30.77%</span></div>
-                                    <div class="items-center inline-flex text-black-600"><div class="w-[10px] h-[10px] rounded-[50%]" style="background-color: #e34c26;"></div><span class="ml-2 text-black-900">HTML</span><span class="ml-1 font-normal">15.38%</span></div>
-                                    <div class="items-center inline-flex text-black-600"><div class="w-[10px] h-[10px] rounded-[50%]" style="background-color: #0066cc;"></div><span class="ml-2 text-black-900">Markdown</span><span class="ml-1 font-normal">7.69%</span></div>
-                                    <div class="items-center inline-flex text-black-600"><div class="w-[10px] h-[10px] rounded-[50%]" style="background-color: #2965f1;"></div><span class="ml-2 text-black-900">CSS</span><span class="ml-1 font-normal">7.69%</span></div>
+                                <div class="language-tags">
+                                    <div class="language-tag">
+                                        <div class="language-color" style="background-color: #42b883;"></div>
+                                        <span>Vue</span>
+                                        <span class="language-percent">38.46%</span>
+                                    </div>
+                                    <div class="language-tag">
+                                        <div class="language-color" style="background-color: #f7df1e;"></div>
+                                        <span>JavaScript</span>
+                                        <span class="language-percent">30.77%</span>
+                                    </div>
+                                    <div class="language-tag">
+                                        <div class="language-color" style="background-color: #e34c26;"></div>
+                                        <span>HTML</span>
+                                        <span class="language-percent">15.38%</span>
+                                    </div>
+                                    <div class="language-tag">
+                                        <div class="language-color" style="background-color: #0066cc;"></div>
+                                        <span>Markdown</span>
+                                        <span class="language-percent">7.69%</span>
+                                    </div>
+                                    <div class="language-tag">
+                                        <div class="language-color" style="background-color: #2965f1;"></div>
+                                        <span>CSS</span>
+                                        <span class="language-percent">7.69%</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -188,17 +221,33 @@
                             </div>
                             <div class="mb-12 max-xl:mb-4">
                                 <div class="flex items-center text-l text-black-900 "><span>语言</span></div>
-                                <div class="flex rounded-[4px] overflow-x-hidden mt-4 gap-x-[2px]">
-                                    <div class="h-2 shrink min-w-[2px]" style="width: 88%; background-color: #e34c26;"></div>
-                                    <div class="h-2 shrink min-w-[2px]" style="width: 4%; background-color: #3776ab;"></div>
-                                    <div class="h-2 shrink min-w-[2px]" style="width: 4%; background-color: #0066cc;"></div>
-                                    <div class="h-2 shrink min-w-[2px]" style="width: 4%; background-color: #7f7f7f;"></div>
+                                <div class="language-progress">
+                                    <div style="width: 88%; background-color: #e34c26;"></div>
+                                    <div style="width: 4%; background-color: #3776ab;"></div>
+                                    <div style="width: 4%; background-color: #0066cc;"></div>
+                                    <div style="width: 4%; background-color: #7f7f7f;"></div>
                                 </div>
-                                <div class="rounded-[4px] overflow-x-hidden mt-2 flex flex-wrap gap-x-5 gap-y-0.5 font-medium text-sm">
-                                    <div class="items-center inline-flex text-black-600"><div class="w-[10px] h-[10px] rounded-[50%]" style="background-color: #e34c26;"></div><span class="ml-2 text-black-900">HTML</span><span class="ml-1 font-normal">88%</span></div>
-                                    <div class="items-center inline-flex text-black-600"><div class="w-[10px] h-[10px] rounded-[50%]" style="background-color: #3776ab;"></div><span class="ml-2 text-black-900">Python</span><span class="ml-1 font-normal">4%</span></div>
-                                    <div class="items-center inline-flex text-black-600"><div class="w-[10px] h-[10px] rounded-[50%]" style="background-color: #0066cc;"></div><span class="ml-2 text-black-900">Markdown</span><span class="ml-1 font-normal">4%</span></div>
-                                    <div class="items-center inline-flex text-black-600"><div class="w-[10px] h-[10px] rounded-[50%]" style="background-color: #7f7f7f;"></div><span class="ml-2 text-black-900">JSON</span><span class="ml-1 font-normal">4%</span></div>
+                                <div class="language-tags">
+                                    <div class="language-tag">
+                                        <div class="language-color" style="background-color: #e34c26;"></div>
+                                        <span>HTML</span>
+                                        <span class="language-percent">88%</span>
+                                    </div>
+                                    <div class="language-tag">
+                                        <div class="language-color" style="background-color: #3776ab;"></div>
+                                        <span>Python</span>
+                                        <span class="language-percent">4%</span>
+                                    </div>
+                                    <div class="language-tag">
+                                        <div class="language-color" style="background-color: #0066cc;"></div>
+                                        <span>Markdown</span>
+                                        <span class="language-percent">4%</span>
+                                    </div>
+                                    <div class="language-tag">
+                                        <div class="language-color" style="background-color: #7f7f7f;"></div>
+                                        <span>JSON</span>
+                                        <span class="language-percent">4%</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
