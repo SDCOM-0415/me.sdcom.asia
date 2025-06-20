@@ -14,6 +14,19 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // 添加页面加载动画
 document.addEventListener('DOMContentLoaded', () => {
     document.body.classList.add('loaded');
+    
+    // 获取一言内容
+    fetch('https://v1.hitokoto.cn/')
+        .then(response => response.json())
+        .then(data => {
+            const hitokotoElement = document.getElementById('hitokoto');
+            // 使用打字效果显示一言
+            typeEffect(hitokotoElement, data.hitokoto);
+        })
+        .catch(error => {
+            console.error('获取一言失败:', error);
+            document.getElementById('hitokoto').textContent = '种一棵树最好的时间是十年前，其次是现在。';
+        });
 });
 
 const themeToggle = document.createElement('button');
