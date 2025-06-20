@@ -16,10 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.classList.add('loaded');
 });
 
-// 可选：添加暗色/亮色模式切换
-// 如果你想添加主题切换功能，可以取消下面的注释
-
-/*
 const themeToggle = document.createElement('button');
 themeToggle.id = 'theme-toggle';
 themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
@@ -76,12 +72,7 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
-*/
 
-// 可选：添加打字效果
-// 如果你想添加打字效果，可以取消下面的注释
-
-/*
 function typeEffect(element, text, speed = 100) {
     let i = 0;
     element.innerHTML = '';
@@ -107,4 +98,3 @@ document.addEventListener('DOMContentLoaded', () => {
         typeEffect(textElement, originalText);
     }, 500);
 });
-*/
