@@ -6,6 +6,7 @@
     --card-hover-bg: rgba(255, 255, 255, 0.15);
     --github-color: #333;
     --blog-color: linear-gradient(to right, #fd5949, #d6249f);
+    --cnb-color: #4299e1;
     --stackoverflow-color: #ff8200;
     --twitter-color: #00ACEE;
     --bilibili-color: #fb7299;
@@ -133,6 +134,11 @@ h1 {
 
 .social-link.email:hover {
     background-color: var(--email-color);
+    color: white;
+}
+
+.social-link.cnb:hover {
+    background-color: var(--cnb-color);
     color: white;
 }
 
