@@ -229,26 +229,44 @@ h1 {
 
 .skill-icons {
     display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
     justify-content: center;
-    align-items: center;
     margin: 1rem 0;
 }
 
-.skill-icons-image {
-    max-width: 100%;
-    height: auto;
+.skill-icon {
+    background-color: var(--card-bg);
     border-radius: 0.5rem;
-    transition: transform 0.3s ease;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
-.skill-icons-image:hover {
-    transform: translateY(-2px);
+.skill-icon:hover {
+    background-color: var(--card-hover-bg);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.skill-icon img {
+    width: 40px;
+    height: 40px;
+    display: block;
 }
 
 @media (max-width: 768px) {
-    .skill-icons-image {
-        max-width: 100%;
-        height: auto;
+    .skill-icons {
+        gap: 0.25rem;
+    }
+    
+    .skill-icon {
+        padding: 0.25rem;
+    }
+    
+    .skill-icon img {
+        width: 30px;
+        height: 30px;
     }
 }
 
