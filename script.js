@@ -29,62 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 });
 
-const themeToggle = document.createElement('button');
-themeToggle.id = 'theme-toggle';
-themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
-themeToggle.title = '切换主题';
-document.body.appendChild(themeToggle);
-
-// 检查本地存储中的主题偏好
-const currentTheme = localStorage.getItem('theme');
-if (currentTheme) {
-    document.documentElement.setAttribute('data-theme', currentTheme);
-    if (currentTheme === 'light') {
-        themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
-    }
-}
-
-// 主题切换功能
-themeToggle.addEventListener('click', () => {
-    let theme = 'dark';
-    if (document.documentElement.getAttribute('data-theme') === 'dark') {
-        theme = 'light';
-        themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
-    } else {
-        themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
-    }
-    document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem('theme', theme);
-});
-
-// 添加主题切换按钮的样式
-const style = document.createElement('style');
-style.textContent = `
-    #theme-toggle {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background-color: var(--accent-color);
-        color: white;
-        border: none;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.5rem;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-        transition: all 0.3s ease;
-        z-index: 1000;
-    }
-    
-    #theme-toggle:hover {
-        transform: scale(1.1);
-    }
-`;
-document.head.appendChild(style);
+// 主题切换功能已移除
 
 function typeEffect(element, text, speed = 100) {
     let i = 0;
