@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人介绍网站</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="images/avatar.svg">
+</head>
+<body>
+    <main>
+        <section class="intro">
+            <h1>你好，我是 <span class="text-gradient">小明</span></h1>
+            <p class="subtitle">
+                👨‍💻 <strong>全栈</strong> 开发者 / <code>研究生</code><br>
+                种一棵树最好的时间是十年前，其次是<strong>现在</strong>。
+            </p>
+            
+            <div class="social-links">
+                <a href="https://github.com/yourusername" target="_blank" class="social-link github">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://yourblog.com" target="_blank" class="social-link blog">
+                    <i class="fas fa-book"></i>
+                    <span>博客</span>
+                </a>
+                <a href="https://stackoverflow.com/users/yourid" target="_blank" class="social-link stackoverflow">
+                    <i class="fab fa-stack-overflow"></i>
+                </a>
+                <a href="https://twitter.com/yourusername" target="_blank" class="social-link twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://space.bilibili.com/yourid" target="_blank" class="social-link bilibili">
+                    <i class="fab fa-bilibili"></i>
+                </a>
+                <a href="mailto:your.email@example.com" target="_blank" class="social-link email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </section>
+
+        <section class="github-activity">
+            <img src="https://github.com/yourusername.png" alt="GitHub 头像" class="github-avatar">
+            <!-- 如果你想添加 GitHub 贡献图，可以使用类似的服务 -->
+            <!-- <img src="https://github-contribution-graph.vercel.app/api/yourusername" alt="GitHub 贡献图" class="github-contrib"> -->
+        </section>
+
+        <section class="projects">
+            <h3 class="section-title">
+                <span>💻 项目</span>
+                <a href="https://github.com/yourusername" target="_blank">
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                </a>
+            </h3>
+            
+            <div class="project-grid">
+                <a href="https://github.com/yourusername/project1" target="_blank" class="project-card">
+                    <div class="project-content">
+                        <div class="project-info">
+                            <div class="project-title">项目一</div>
+                            <div class="project-description">
+                                这是一个很棒的项目，它可以解决某个特定问题。使用了现代技术栈开发。
+                            </div>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-folder-open"></i>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="https://github.com/yourusername/project2" target="_blank" class="project-card">
+                    <div class="project-content">
+                        <div class="project-info">
+                            <div class="project-title">项目二</div>
+                            <div class="project-description">
+                                一个创新的工具，帮助开发者提高工作效率。
+                            </div>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="https://github.com/yourusername/project3" target="_blank" class="project-card">
+                    <div class="project-content">
+                        <div class="project-info">
+                            <div class="project-title">项目三</div>
+                            <div class="project-description">
+                                一个实用的库，简化了常见的开发任务。
+                            </div>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="https://github.com/yourusername/project4" target="_blank" class="project-card">
+                    <div class="project-content">
+                        <div class="project-info">
+                            <div class="project-title">项目四</div>
+                            <div class="project-description">
+                                一个有趣的应用，展示了创新的用户界面设计。
+                            </div>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="skills">
+            <h3 class="section-title">⚡ 技能</h3>
+            <div class="skill-icons">
+                <div class="skill-icon" title="HTML5"><i class="fab fa-html5"></i></div>
+                <div class="skill-icon" title="CSS3"><i class="fab fa-css3-alt"></i></div>
+                <div class="skill-icon" title="JavaScript"><i class="fab fa-js"></i></div>
+                <div class="skill-icon" title="React"><i class="fab fa-react"></i></div>
+                <div class="skill-icon" title="Node.js"><i class="fab fa-node-js"></i></div>
+                <div class="skill-icon" title="Python"><i class="fab fa-python"></i></div>
+                <div class="skill-icon" title="Git"><i class="fab fa-git-alt"></i></div>
+                <div class="skill-icon" title="Docker"><i class="fab fa-docker"></i></div>
+                <div class="skill-icon" title="Linux"><i class="fab fa-linux"></i></div>
+                <div class="skill-icon" title="AWS"><i class="fab fa-aws"></i></div>
+                <!-- 添加更多技能图标 -->
+            </div>
+        </section>
+
+        <footer>
+            <p>© <span id="current-year"></span> Your Name. 保留所有权利。</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

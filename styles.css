@@ -1,0 +1,289 @@
+:root {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --accent-color: #7b50c7;
+    --card-bg: rgba(255, 255, 255, 0.1);
+    --card-hover-bg: rgba(255, 255, 255, 0.15);
+    --github-color: #333;
+    --blog-color: linear-gradient(to right, #fd5949, #d6249f);
+    --stackoverflow-color: #ff8200;
+    --twitter-color: #00ACEE;
+    --bilibili-color: #fb7299;
+    --email-color: #00b0ff;
+    --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 0 1rem;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* 介绍部分 */
+.intro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.text-gradient {
+    background: linear-gradient(90deg, #7b50c7, #4299e1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.8;
+}
+
+.subtitle strong {
+    font-weight: 600;
+}
+
+.subtitle code {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+/* 社交链接 */
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1.5rem 0;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    background-color: var(--card-bg);
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    transform: translateY(-2px);
+}
+
+.social-link i {
+    font-size: 1.2rem;
+}
+
+.social-link span {
+    margin-left: 0.25rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.social-link.github:hover {
+    background-color: var(--github-color);
+    color: white;
+}
+
+.social-link.blog:hover {
+    background: var(--blog-color);
+    color: white;
+}
+
+.social-link.stackoverflow:hover {
+    background-color: var(--stackoverflow-color);
+    color: white;
+}
+
+.social-link.twitter:hover {
+    background-color: var(--twitter-color);
+    color: white;
+}
+
+.social-link.bilibili:hover {
+    background-color: var(--bilibili-color);
+    color: white;
+}
+
+.social-link.email:hover {
+    background-color: var(--email-color);
+    color: white;
+}
+
+/* GitHub 活动 */
+.github-activity {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.github-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid var(--accent-color);
+}
+
+.github-contrib {
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+}
+
+/* 项目部分 */
+.section-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.section-title a {
+    margin-left: 0.5rem;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.section-title a:hover {
+    opacity: 1;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.project-card {
+    background-color: var(--card-bg);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.project-card:hover {
+    background-color: var(--card-hover-bg);
+}
+
+.project-content {
+    display: flex;
+    align-items: center;
+}
+
+.project-info {
+    flex: 1;
+}
+
+.project-title {
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+
+.project-description {
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+.project-icon {
+    margin-left: 1rem;
+    font-size: 2rem;
+    opacity: 0.8;
+}
+
+/* 技能部分 */
+.skills {
+    margin-bottom: 2rem;
+}
+
+.skill-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.skill-icon {
+    font-size: 2rem;
+    padding: 0.75rem;
+    background-color: var(--card-bg);
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.skill-icon:hover {
+    background-color: var(--card-hover-bg);
+    transform: translateY(-2px);
+}
+
+/* 页脚 */
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    opacity: 0.5;
+    font-size: 0.9rem;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+    
+    .subtitle {
+        font-size: 1rem;
+    }
+    
+    .social-link {
+        padding: 0.4rem 0.6rem;
+    }
+    
+    .social-link i {
+        font-size: 1rem;
+    }
+}
+
+/* 暗色模式适配 */
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg-color: #f5f5f5;
+        --text-color: #333;
+        --card-bg: rgba(0, 0, 0, 0.05);
+        --card-hover-bg: rgba(0, 0, 0, 0.1);
+    }
+}
