@@ -136,9 +136,9 @@ setTimeout(() => {
 
 欢迎提交问题和改进建议！如果你想贡献代码，请遵循以下步骤：
 1. Fork 此仓库
-2. 创建你的功能分支 (`git checkout -b feature/amazing-feature`)
-3. 提交你的更改 (`git commit -m 'Add some amazing feature'`)
-4. 推送到分支 (`git push origin feature/amazing-feature`)
+2. 创建你的功能分支 (`git checkout -b SDCOM/Web/wiki`)
+3. 提交你的更改 (`git commit -m 'Add new message'`)
+4. 推送到分支 (`git push origin SDCOM/Web/wiki`)
 5. 打开一个 Pull Request
 
 ## 许可
