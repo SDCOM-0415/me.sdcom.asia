@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<!-- 头部区域：包含元数据、标题和样式链接 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式设计视口设置 -->
+    <title>欢迎你们重新认识SDCOM</title> <!-- 网页标题 -->
+    <link rel="stylesheet" href="styles.css"> <!-- 引入自定义样式表 -->
+    <link rel="stylesheet" href="progress-styles.css"> <!-- 引入进度条专用样式 -->
+    <link rel="stylesheet" href="//cdn.jsdmirror.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <!-- 引入Font Awesome图标 -->
+    <link rel="icon" type="image/jpeg" href="images/favicon.jpeg"> <!-- 设置网站图标 -->
+</head>
+
+<!-- 页面主体 -->
+<body>
+    <!-- 主要内容区域 -->
+    <main>
+        <!-- 个人介绍部分 -->
+        <section class="intro">
+            <h1>Hi！这里是<span class="text-gradient">SDCOM</span></h1>
+            <p class="subtitle">
+                <span>👨‍💻 <code>一个刚刚中考完的初中生</code> / 只会<strong>面向CV编程</strong>的小人物<br></span>
+                <span id="hitokoto">正在加载一言...</span> <!-- 一言加载区域 -->
+            </p>
+            
+            <!-- 社交媒体链接 -->
+            <div class="social-links">
+                <a href="https://cnb.cool/u/SDCOM" target="_blank" class="social-link cnb">
+                    <img src="https://cnb.cool/images/favicon.png" alt="CNB" style="width: 1em; height: 1em; vertical-align: middle;">
+                    <span>CNB</span>
+                </a>
+                <a href="https://github.com/SDCOM-0415" target="_blank" class="social-link github">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://sdcom.cnstlapy.cn" target="_blank" class="social-link blog">
+                    <i class="fas fa-book"></i>
+                    <span>博客</span>
+                </a>
+                <a href="https://x.com/SDCOM_0415" target="_blank" class="social-link twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://space.bilibili.com/1658099032" target="_blank" class="social-link bilibili">
+                    <i class="fab fa-bilibili"></i>
+                </a>
+                <a href="mailto:sdcom@sdcom.asia" target="_blank" class="social-link email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- GitHub活动展示区域 -->
+        <section class="github-activity">
+            <img src="//www.sdcom.top/Picture/tubiao.jpeg" alt="GitHub 头像" class="github-avatar">
+            <img src="//cdn.jsdmirror.cn/gh/SDCOM-0415/SDCOM-0415@main/out/github-snake.svg" width="100%" alt="GitHub contribution snake">
+        </section>
+
+        <!-- 项目展示区域 -->
+        <section class="projects">
+            <h3 class="section-title">
+                <span>💻 项目</span>
+                <a href="https://cnb.cool/SDCOM" target="_blank">
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                </a>
+            </h3>
+            
+            <!-- 项目卡片网格 -->
+            <div class="project-grid">
+                <!-- www.sdcom.asia 项目 -->
+                <a href="https://cnb.cool/SDCOM/Web/www.sdcom.asia" target="_blank" class="project-card">
+                    <div class="project-content">
+                        <div class="project-info">
+                            <div class="project-title">www.sdcom.asia</div>
+                            <div class="project-description">
+                                SDCOM网站的首页，使用HTML/CSS/JavaScript开发。
+                            </div>
+                            <div class="mb-12 max-xl:mb-4">
+                                <div class="flex items-center text-l text-black-900 "><span>语言</span></div>
+                                <div class="language-progress">
+                                    <div style="width: 32.56%; background-color: rgb(165, 59, 112);"></div>
+                                    <div style="width: 32.56%; background-color: rgb(86, 61, 124);"></div>
+                                    <div style="width: 13.95%; background-color: rgb(227, 76, 38);"></div>
+                                    <div style="width: 11.63%; background-color: rgb(29, 54, 93);"></div>
+                                    <div style="width: 9.30%; background-color: rgb(244, 211, 94);"></div>
+                                </div>
+                                <div class="language-tags">
+                                    <div class="language-tag">
+                                        <div class="language-color" style="background-color: rgb(165, 59, 112);"></div>
+                                        <span>SCSS</span>
+                                        <span class="language-percent">32.56%</span>
+                                    </div>
+                                    <div class="language-tag">
+                                        <div class="language-color" style="background-color: rgb(86, 61, 124);"></div>
+                                        <span>LESS</span>
+                                        <span class="language-percent">32.56%</span>
+                                    </div>
+                                    <div class="language-tag">
+                                        <div class="language-color" style="background-color: rgb(227, 76, 38);"></div>
+                                        <span>HTML</span>
+                                        <span class="language-percent">13.95%</span>
+                                    </div>
+                                    <div class="language-tag">
+                                        <div class="language-color" style="background-color: rgb(29, 54, 93);"></div>
+                                        <span>CSS</span>
+                                        <span class="language-percent">11.63%</span>
+                                    </div>
+                                    <div class="language-tag">
+                                        <div class="language-color" style="background-color: rgb(244, 211, 94);"></div>
+                                        <span>JavaScript</span>
+                                        <span class="language-percent">9.30%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- www.sdcom.top 项目 -->
+                <a href="https://cnb.cool/SDCOM/Web/www.sdcom.top" target="_blank" class="project-card">
+                    <div class="project-content">
+                        <div class="project-info">
+                            <div class="project-title">www.sdcom.top</div>
+                            <div class="project-description">
+                                SDCOM网站首页，使用中国大陆服务器加速，使用HTML/CSS/JavaScript开发。
+                            </div>
+                            <div class="mb-12 max-xl:mb-4">
+                                <div class="flex items-center text-l text-black-900 "><span>语言</span></div>
+                                <div class="language-progress">
+                                    <div style="width: 48.2%; background-color: rgb(86, 61, 124);"></div>
+                                    <div style="width: 18.8%; background-color: rgb(255, 153, 0);"></div>
+                                    <div style="width: 12.8%; background-color: rgb(29, 54, 93);"></div>
+                                    <div style="width: 12.8%; background-color: rgb(165, 59, 112);"></div>
+                                    <div style="width: 7.4%; background-color: rgb(247, 105, 69);"></div>
+                                </div>
+                                <div class="language-tags">
+                                    <div class="language-tag">
+                                        <div class="language-color" style="background-color: rgb(86, 61, 124);"></div>
+                                        <span>CSS</span>
+                                        <span class="language-percent">48.2%</span>
+                                    </div>
+                                    <div class="language-tag">
+                                        <div class="language-color" style="background-color: rgb(255, 153, 0);"></div>
+                                        <span>SVG</span>
+                                        <span class="language-percent">18.8%</span>
+                                    </div>
+                                    <div class="language-tag">
+                                        <div class="language-color" style="background-color: rgb(29, 54, 93);"></div>
+                                        <span>LESS</span>
+                                        <span class="language-percent">12.8%</span>
+                                    </div>
+                                    <div class="language-tag">
+                                        <div class="language-color" style="background-color: rgb(165, 59, 112);"></div>
+                                        <span>Sass</span>
+                                        <span class="language-percent">12.8%</span>
+                                    </div>
+                                    <div class="language-tag">
+                                        <div class="language-color" style="background-color: rgb(247, 105, 69);"></div>
+                                        <span>Others</span>
+                                        <span class="language-percent">7.4%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- shit 项目 -->
+                <a href="https://cnb.cool/SDCOM/shit" target="_blank" class="project-card">
+                    <div class="project-content">
+                        <div class="project-info">
+                            <div class="project-title">shit</div>
+                            <div class="project-description">
+                                一个名为shit的实用脚本和文档集合，包含Linux/Docker相关脚本和网站操作指南。
+                            </div>
+                            <div class="mb-12 max-xl:mb-4">
+                                <div class="flex items-center text-l text-black-900 "><span>语言</span></div>
+                                <div class="language-progress">
+                                    <div style="width: 53.85%; background-color: #0066cc;"></div>
+                                    <div style="width: 30.77%; background-color: #4d9900;"></div>
+                                    <div style="width: 15.38%; background-color: #e34c26;"></div>
+                                </div>
+                                <div class="language-tags">
+                                    <div class="language-tag">
+                                        <div class="language-color" style="background-color: #0066cc;"></div>
+                                        <span>Markdown</span>
+                                        <span class="language-percent">53.85%</span>
+                                    </div>
+                                    <div class="language-tag">
+                                        <div class="language-color" style="background-color: #4d9900;"></div>
+                                        <span>Shell</span>
+                                        <span class="language-percent">30.77%</span>
+                                    </div>
+                                    <div class="language-tag">
+                                        <div class="language-color" style="background-color: #e34c26;"></div>
+                                        <span>HTML</span>
+                                        <span class="language-percent">15.38%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-terminal"></i>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- 452 项目 -->
+                <a href="https://cnb.cool/SDCOM/Web/452" target="_blank" class="project-card">
+                    <div class="project-content">
+                        <div class="project-info">
+                            <div class="project-title">452照片墙</div>
+                            <div class="project-description">
+                                基于Vue.js的照片展示项目，使用Vite构建，部署在Netlify。
+                            </div>
+                            <div class="mb-12 max-xl:mb-4">
+                                <div class="flex items-center text-l text-black-900 "><span>语言</span></div>
+                                <div class="language-progress">
+                                    <div style="width: 38.46%; background-color: #42b883;"></div>
+                                    <div style="width: 30.77%; background-color: #f7df1e;"></div>
+                                    <div style="width: 15.38%; background-color: #e34c26;"></div>
+                                    <div style="width: 7.69%; background-color: #0066cc;"></div>
+                                    <div style="width: 7.69%; background-color: #2965f1;"></div>
+                                </div>
+                                <div class="language-tags">
+                                    <div class="language-tag">
+                                        <div class="language-color" style="background-color: #42b883;"></div>
+                                        <span>Vue</span>
+                                        <span class="language-percent">38.46%</span>
+                                    </div>
+                                    <div class="language-tag">
+                                        <div class="language-color" style="background-color: #f7df1e;"></div>
+                                        <span>JavaScript</span>
+                                        <span class="language-percent">30.77%</span>
+                                    </div>
+                                    <div class="language-tag">
+                                        <div class="language-color" style="background-color: #e34c26;"></div>
+                                        <span>HTML</span>
+                                        <span class="language-percent">15.38%</span>
+                                    </div>
+                                    <div class="language-tag">
+                                        <div class="language-color" style="background-color: #0066cc;"></div>
+                                        <span>Markdown</span>
+                                        <span class="language-percent">7.69%</span>
+                                    </div>
+                                    <div class="language-tag">
+                                        <div class="language-color" style="background-color: #2965f1;"></div>
+                                        <span>CSS</span>
+                                        <span class="language-percent">7.69%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Web 项目 -->
+                <a href="https://cnb.cool/SDCOM_code/xigua/Web" target="_blank" class="project-card">
+                    <div class="project-content">
+                        <div class="project-info">
+                            <div class="project-title">Xigua_Web</div>
+                            <div class="project-description">
+                                这是在西瓜创客上课时所编写的程序的仓库，为了方便打开和查找各个阶段的内容，所以做了这个定制页面
+                            </div>
+                            <div class="mb-12 max-xl:mb-4">
+                                <div class="flex items-center text-l text-black-900 "><span>语言</span></div>
+                                <div class="language-progress">
+                                    <div style="width: 88%; background-color: #e34c26;"></div>
+                                    <div style="width: 4%; background-color: #3776ab;"></div>
+                                    <div style="width: 4%; background-color: #0066cc;"></div>
+                                    <div style="width: 4%; background-color: #7f7f7f;"></div>
+                                </div>
+                                <div class="language-tags">
+                                    <div class="language-tag">
+                                        <div class="language-color" style="background-color: #e34c26;"></div>
+                                        <span>HTML</span>
+                                        <span class="language-percent">88%</span>
+                                    </div>
+                                    <div class="language-tag">
+                                        <div class="language-color" style="background-color: #3776ab;"></div>
+                                        <span>Python</span>
+                                        <span class="language-percent">4%</span>
+                                    </div>
+                                    <div class="language-tag">
+                                        <div class="language-color" style="background-color: #0066cc;"></div>
+                                        <span>Markdown</span>
+                                        <span class="language-percent">4%</span>
+                                    </div>
+                                    <div class="language-tag">
+                                        <div class="language-color" style="background-color: #7f7f7f;"></div>
+                                        <span>JSON</span>
+                                        <span class="language-percent">4%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- 技能展示区域 -->
+        <section class="skills">
+            <h3 class="section-title">⚡ 技能</h3>
+            <!-- 技能图标网格 -->
+            <div class="skill-icons">
+                <a href="https://www.gnu.org/software/bash/" target="_blank" class="skill-icon" title="Bash"><img src="//skillicons.hydun.com/icons?i=bash" alt="Bash"></a>
+                <a href="https://discord.com/" target="_blank" class="skill-icon" title="Discord"><img src="//skillicons.hydun.com/icons?i=discord" alt="Discord"></a>
+                <a href="https://www.docker.com/" target="_blank" class="skill-icon" title="Docker"><img src="//skillicons.hydun.com/icons?i=docker" alt="Docker"></a>
+                <a href="https://git-scm.com/" target="_blank" class="skill-icon" title="Git"><img src="//skillicons.hydun.com/icons?i=git" alt="Git"></a>
+                <a href="https://github.com/" target="_blank" class="skill-icon" title="GitHub"><img src="//skillicons.hydun.com/icons?i=github" alt="GitHub"></a>
+                <a href="https://github.com/features/actions" target="_blank" class="skill-icon" title="GitHub Actions"><img src="//skillicons.hydun.com/icons?i=githubactions" alt="GitHub Actions"></a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="skill-icon" title="HTML"><img src="//skillicons.hydun.com/icons?i=html" alt="HTML"></a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="skill-icon" title="JavaScript"><img src="//skillicons.hydun.com/icons?i=js" alt="JavaScript"></a>
+                <a href="https://www.linux.org/" target="_blank" class="skill-icon" title="Linux"><img src="//skillicons.hydun.com/icons?i=linux" alt="Linux"></a>
+                <a href="https://daringfireball.net/projects/markdown/" target="_blank" class="skill-icon" title="Markdown"><img src="//skillicons.hydun.com/icons?i=md" alt="Markdown"></a>
+                <a href="https://www.mysql.com/" target="_blank" class="skill-icon" title="MySQL"><img src="//skillicons.hydun.com/icons?i=mysql" alt="MySQL"></a>
+                <a href="https://www.netlify.com/" target="_blank" class="skill-icon" title="Netlify"><img src="//skillicons.hydun.com/icons?i=netlify" alt="Netlify"></a>
+                <a href="https://nginx.org/" target="_blank" class="skill-icon" title="Nginx"><img src="//skillicons.hydun.com/icons?i=nginx" alt="Nginx"></a>
+                <a href="https://nodejs.org/" target="_blank" class="skill-icon" title="Node.js"><img src="//skillicons.hydun.com/icons?i=nodejs" alt="Node.js"></a>
+                <a href="https://www.adobe.com/products/photoshop.html" target="_blank" class="skill-icon" title="Photoshop"><img src="//skillicons.hydun.com/icons?i=ps" alt="Photoshop"></a>
+                <a href="https://www.python.org/" target="_blank" class="skill-icon" title="Python"><img src="//skillicons.hydun.com/icons?i=py" alt="Python"></a>
+                <a href="https://redis.io/" target="_blank" class="skill-icon" title="Redis"><img src="//skillicons.hydun.com/icons?i=redis" alt="Redis"></a>
+                <a href="https://www.sqlite.org/" target="_blank" class="skill-icon" title="SQLite"><img src="//skillicons.hydun.com/icons?i=sqlite" alt="SQLite"></a>
+                <a href="https://stackoverflow.com/" target="_blank" class="skill-icon" title="Stack Overflow"><img src="//skillicons.hydun.com/icons?i=stackoverflow" alt="Stack Overflow"></a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/SVG" target="_blank" class="skill-icon" title="SVG"><img src="//skillicons.hydun.com/icons?i=svg" alt="SVG"></a>
+                <a href="https://twitter.com/" target="_blank" class="skill-icon" title="Twitter"><img src="//skillicons.hydun.com/icons?i=twitter" alt="Twitter"></a>
+                <a href="https://www.typescriptlang.org/" target="_blank" class="skill-icon" title="TypeScript"><img src="//skillicons.hydun.com/icons?i=ts" alt="TypeScript"></a>
+                <a href="https://vercel.com/" target="_blank" class="skill-icon" title="Vercel"><img src="//skillicons.hydun.com/icons?i=vercel" alt="Vercel"></a>
+                <a href="https://vitejs.dev/" target="_blank" class="skill-icon" title="Vite"><img src="//skillicons.hydun.com/icons?i=vite" alt="Vite"></a>
+                <a href="https://code.visualstudio.com/" target="_blank" class="skill-icon" title="VS Code"><img src="//skillicons.hydun.com/icons?i=vscode" alt="VS Code"></a>
+                <a href="https://vuejs.org/" target="_blank" class="skill-icon" title="Vue"><img src="//skillicons.hydun.com/icons?i=vue" alt="Vue"></a>
+                <a href="https://workers.cloudflare.com/" target="_blank" class="skill-icon" title="Cloudflare Workers"><img src="//skillicons.hydun.com/icons?i=workers" alt="Cloudflare Workers"></a>
+                <a href="https://aws.amazon.com/cn/" target="_blank" class="skill-icon" title="AWS"><img src="//skillicons.hydun.com/icons?i=aws" alt="AWS"></a>
+                <a href="https://azure.microsoft.com/zh-cn/" target="_blank" class="skill-icon" title="Azure"><img src="//skillicons.hydun.com/icons?i=azure" alt="Azure"></a>
+            </div>
+        </section>
+
+        <!-- 页脚区域 -->
+        <footer>
+            <p>&copy;<span id="current-year"></span> SDCOM. 保留所有权利。</p>
+            <p><a href="https://beian.miit.gov.cn/" target="_blank">赣ICP备2023009313号-3</a></p>
+        </footer>
+    </main>
+
+    <!-- 引入JavaScript脚本 -->
+    <script src="script.js"></script>
+</body>
+</html>
