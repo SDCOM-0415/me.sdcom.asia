@@ -60,7 +60,7 @@
 在 `index.html` 文件中，你可以在 `.project-grid` 部分添加更多项目卡片：
 
 ```html
-<a href="https://github.com/yourusername/yourproject" target="_blank" class="project-card">
+<a href="https://cnb.cool/yourusername/yourproject" target="_blank" class="project-card">
     <div class="project-content">
         <div class="project-info">
             <div class="project-title">项目名称</div>
